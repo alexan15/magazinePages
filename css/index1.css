@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg, #4f4fd8, #477247);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.wrapper{
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-position: cover;
+    background: url('../img/index1-bg.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.fg{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fg nav, .fg div{
+    width: 100%;
+}
+nav{
+    height: 65px;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end ;
+    margin-bottom: 50px;
+}
+nav ul{
+    margin-right: 3rem;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: flex-end; 
+}
+nav ul li{
+    border-right: 2px solid grey;
+    padding-right: 10px;
+    height: 100%;
+    padding-top: 2.4rem;
+    font-size: 1.2rem;
+
+}
+nav ul li:nth-child(1){
+    margin-right: 50px;
+    
+}
+.onthego .ideas .guess{
+    position: relative;
+
+}
+.guess{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.guess p{
+    position: relative;
+    right: -35%;
+    text-align: center;
+    padding: 2rem;
+    width: 230px;
+    height: 230px;
+    margin: 0 auto;
+    background: orange;
+    border-radius: 50%;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    cursor: pointer;
+    font-weight: 700;
+    margin-bottom: 20px;
+    transition: 500ms;
+}
+
+.onthego-content{
+    max-width: 300px;
+    position: relative;
+    right: -65%;
+    cursor: pointer;
+    transition: 500ms;
+}
+.onthego-content *{
+    margin: 1rem;
+    color: #aaa;
+}
+.onthego-content .by{
+    font-size: 1.3rem;
+    color: #555;
+}
+.onthego-content .text{
+    letter-spacing: 2px;
+}
+
+.ideas p{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #1c6a85;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    padding: 1rem;
+     line-height: 3rem;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    text-align: center;
+    left: 3%;
+    cursor: pointer;
+    transition: 500ms;
+}
+.intheknow{
+    position: relative;
+    font-size: 7rem;
+    font-weight: 500;
+    padding: 0 auto;
+    color: #1c6a85;
+    margin-left: 2rem;
+}
+
+.underline{
+    position: relative;
+    left: .5rem;
+    height: 10px;
+    background: #1c6a85;
+    margin-top: -10px;
+    margin-left: 0;
+    max-width: 90%;
+}
+
+.guess p:hover, .onthego-content:hover, .ideas p:hover{
+    transform: translateY(-1rem);
+}
