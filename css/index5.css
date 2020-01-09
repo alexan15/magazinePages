@@ -1,0 +1,45 @@
+.content{
+    width: 50%;
+    /* background: #232323; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
+    font-family: sans-serif
+}
+img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.content{
+    border: 1px solid orangered;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+.left{
+    position: relative;
+    text-align: left;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+}
+.smaller-img{
+    position: relative;
+}
+.img-left, .img-right{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+}
+.img-left{
+    position: absolute;
+    left: 30px;
+    top: 450px;
+}
+.img-right{
+    position: absolute;
+    left: 350px;
+    top: 370px;
+}
